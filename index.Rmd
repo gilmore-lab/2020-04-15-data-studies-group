@@ -1,5 +1,6 @@
 ---
-title: "Report from the front lines"
+title: "The open science revolution"
+subtitle: "Report from the front lines"
 author: "Rick Gilmore"
 date: "`r Sys.time()`"
 css: css/ioslides-wide.css

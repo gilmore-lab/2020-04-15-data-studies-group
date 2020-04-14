@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Report from the front lines</title>
+  <title>The open science revolution</title>
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="chrome=1">
@@ -19,8 +19,9 @@
     var SLIDE_CONFIG = {
       // Slide settings
       settings: {
-                title: 'Report from the front lines',
-                        useBuilds: true,
+                title: 'The open science revolution',
+                        subtitle: 'Report from the front lines',
+                useBuilds: true,
         usePrettify: true,
         enableSlideAreas: true,
         enableTouch: true,
@@ -100,9 +101,9 @@ slide:not(.current) .plotly.html-widget{
         <!-- The content of this hgroup is replaced programmatically through the slide_config.json. -->
     <hgroup class="auto-fadein">
       <h1 data-config-title><!-- populated from slide_config.json --></h1>
-      
+      <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
       <p data-config-presenter><!-- populated from slide_config.json --></p>
-            <p style="margin-top: 6px; margin-left: -2px;">2020-04-14 09:25:08</p>
+            <p style="margin-top: 6px; margin-left: -2px;">2020-04-14 10:18:15</p>
           </hgroup>
   </slide>
 
@@ -169,7 +170,7 @@ slide:not(.current) .plotly.html-widget{
 
 </article></slide><slide class=""><hgroup><h2></h2></hgroup><article >
 
-<div class="figure" style="text-align: center">
+<div style="text-align: center" class="figure">
 <img src="http://www.nature.com/polopoly_fs/7.36716.1469695923!/image/reproducibility-graphic-online1.jpeg_gen/derivatives/landscape_630/reproducibility-graphic-online1.jpeg" alt="[[@Baker2016-rz]](http://doi.org/10.1038/533452a)"  />
 
 <p class="caption">
@@ -182,7 +183,7 @@ slide:not(.current) .plotly.html-widget{
 
 </article></slide><slide class=""><hgroup><h2></h2></hgroup><article >
 
-<div class="figure" style="text-align: center">
+<div style="text-align: center" class="figure">
 <img src="http://www.nature.com/polopoly_fs/7.36718.1464174471!/image/reproducibility-graphic-online3.jpg_gen/derivatives/landscape_630/reproducibility-graphic-online3.jpg" alt="[Baker, 2016](http://doi.org/10.1038/533452a)"  />
 
 <p class="caption">
@@ -317,7 +318,7 @@ slide:not(.current) .plotly.html-widget{
 <pre class = 'prettyprint lang-r'>databraryapi::get_db_stats()</pre>
 
 <pre >##                  date investigators affiliates institutions
-## 1 2020-04-14 09:25:08          1121        542          563
+## 1 2020-04-14 10:18:16          1121        542          563
 ##   datasets_total datasets_shared n_files   hours       TB
 ## 1           1072             522  118869 53015.7 25.08527</pre>
 
@@ -362,16 +363,16 @@ slide:not(.current) .plotly.html-widget{
 ## loaded via a namespace (and not attached):
 ##  [1] Rcpp_1.0.4         digest_0.6.25      R.methodsS3_1.8.0 
 ##  [4] R6_2.4.1           jsonlite_1.6.1     magrittr_1.5      
-##  [7] evaluate_0.14      highr_0.8          httr_1.4.1        
+##  [7] evaluate_0.14      httr_1.4.1         highr_0.8         
 ## [10] rlang_0.4.5        stringi_1.4.6      curl_4.3          
 ## [13] R.oo_1.23.0        R.utils_2.9.2      databraryapi_0.1.9
 ## [16] rmarkdown_2.1      tools_3.6.2        stringr_1.4.0     
 ## [19] xfun_0.12          yaml_2.2.1         compiler_3.6.2    
 ## [22] htmltools_0.4.0    knitr_1.28</pre>
 
-</article></slide><slide class=""><hgroup><h2>References</h2></hgroup><article  class="unnumbered" id="references">
+</article></slide><slide class=""><hgroup><h2>References</h2></hgroup><article  id="references" class="unnumbered">
 
-<div class="references hanging-indent" id="refs">
+<div id="refs" class="references hanging-indent">
 <div id="ref-Baker2016-rz">
 <p>Baker, M. (2016). 1,500 scientists lift the lid on reproducibility. <em>Nature News</em>, <em>533</em>(7604), 452. <a href='https://doi.org/10.1038/533452a' title=''>https://doi.org/10.1038/533452a</a></p></div>
 
