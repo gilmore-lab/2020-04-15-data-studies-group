@@ -20,7 +20,7 @@
       // Slide settings
       settings: {
                 title: 'The open science revolution',
-                        subtitle: 'Report from the front lines',
+                        subtitle: 'A report from the front lines',
                 useBuilds: true,
         usePrettify: true,
         enableSlideAreas: true,
@@ -103,19 +103,11 @@ slide:not(.current) .plotly.html-widget{
       <h1 data-config-title><!-- populated from slide_config.json --></h1>
       <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
       <p data-config-presenter><!-- populated from slide_config.json --></p>
-            <p style="margin-top: 6px; margin-left: -2px;">2020-04-14 10:18:15</p>
+            <p style="margin-top: 6px; margin-left: -2px;">2020-04-15 13:18:04</p>
           </hgroup>
   </slide>
 
 <slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>Preliminaries</h2></hgroup><article  id="preliminaries">
-
-</article></slide><slide class=""><hgroup><h2></h2></hgroup><article >
-
-<!-- QR code for talk -->
-
-<p><img src="index_files/figure-html/qr-code-1.png" width="720" style="display: block; margin: auto;" /></p>
-
-<p><a href='https://gilmore-lab.github.io/2020-04-15-data-studies-group/' title=''>https://gilmore-lab.github.io/2020-04-15-data-studies-group/</a></p>
 
 </article></slide><slide class=""><hgroup><h2></h2></hgroup><article >
 
@@ -170,7 +162,7 @@ slide:not(.current) .plotly.html-widget{
 
 </article></slide><slide class=""><hgroup><h2></h2></hgroup><article >
 
-<div style="text-align: center" class="figure">
+<div class="figure" style="text-align: center">
 <img src="http://www.nature.com/polopoly_fs/7.36716.1469695923!/image/reproducibility-graphic-online1.jpeg_gen/derivatives/landscape_630/reproducibility-graphic-online1.jpeg" alt="[[@Baker2016-rz]](http://doi.org/10.1038/533452a)"  />
 
 <p class="caption">
@@ -183,7 +175,7 @@ slide:not(.current) .plotly.html-widget{
 
 </article></slide><slide class=""><hgroup><h2></h2></hgroup><article >
 
-<div style="text-align: center" class="figure">
+<div class="figure" style="text-align: center">
 <img src="http://www.nature.com/polopoly_fs/7.36718.1464174471!/image/reproducibility-graphic-online3.jpg_gen/derivatives/landscape_630/reproducibility-graphic-online3.jpg" alt="[Baker, 2016](http://doi.org/10.1038/533452a)"  />
 
 <p class="caption">
@@ -191,8 +183,6 @@ slide:not(.current) .plotly.html-widget{
 <a href='http://doi.org/10.1038/533452a' title=''>Baker, 2016</a>
 
 </p></div>
-
-</article></slide><slide class=""><hgroup><h2>Does this surprise you? Why or why not?</h2></hgroup><article  id="does-this-surprise-you-why-or-why-not">
 
 </article></slide><slide class=""><hgroup><h2></h2></hgroup><article >
 
@@ -247,12 +237,25 @@ slide:not(.current) .plotly.html-widget{
 
 </article></slide><slide class=""><hgroup><h2>Video data have unique research potential</h2></hgroup><article  id="video-data-have-unique-research-potential">
 
+<p>as <strong>data</strong>…</p>
+
 <ul>
 <li>Spatially &amp; temporally dense samples of behavior</li>
 <li>&ldquo;Outputs&rdquo; of biological processes</li>
+</ul>
+
+<p><a href='https://www.apa.org/science/about/psa/2017/10/video-data' title=''><span class="cite">(Adolph, K.E., Gilmore, R.O., &amp; Kennedy, J.L., 2017)</span></a></p>
+
+</article></slide><slide class=""><hgroup><h2></h2></hgroup><article >
+
+<p>and as <strong>documentation</strong>…</p>
+
+<ul>
 <li>How procedures are <a href='https://www.play-project.org/collection.html' title=''>actually done</a></li>
 <li>Computer-based <a href='https://nyu.databrary.org/volume/31' title=''>task displays</a></li>
 </ul>
+
+<p><a href='https://doi.org/10.1038/s41562-017-0128' title=''><span class="cite">(Gilmore &amp; Adolph, 2017)</span></a></p>
 
 </article></slide><slide class=""><hgroup><h2>How to protect against risk &amp; realize potential?</h2></hgroup><article  id="how-to-protect-against-risk-realize-potential">
 
@@ -268,7 +271,7 @@ slide:not(.current) .plotly.html-widget{
 <li>World’s only data library specialized for storing and sharing video and audio</li>
 <li>Hosted at New York University</li>
 <li>Opened 2014</li>
-<li>563 institutions; 1663 researchers; 53,016 hours of video + other data; 522 shared projects</li>
+<li>563 institutions; 1665 researchers; 53,222 hours of video + other data; 523 shared projects</li>
 </ul>
 
 </article></slide><slide class=""><hgroup><h2>How Databrary protects personal data</h2></hgroup><article  id="how-databrary-protects-personal-data">
@@ -283,7 +286,7 @@ slide:not(.current) .plotly.html-widget{
 <ul>
 <li>Researchers require institutional authorization</li>
 <li><a href='https://www.databrary.org/resources/agreement.html' title=''>Formal access agreement</a></li>
-<li>Site-wide, not dataset-specific</li>
+<li>Site-wide access, not dataset-specific</li>
 <li>Data use and contribution</li>
 </ul>
 
@@ -318,9 +321,18 @@ slide:not(.current) .plotly.html-widget{
 <pre class = 'prettyprint lang-r'>databraryapi::get_db_stats()</pre>
 
 <pre >##                  date investigators affiliates institutions
-## 1 2020-04-14 10:18:16          1121        542          563
-##   datasets_total datasets_shared n_files   hours       TB
-## 1           1072             522  118869 53015.7 25.08527</pre>
+## 1 2020-04-15 13:18:04          1122        543          563
+##   datasets_total datasets_shared n_files    hours       TB
+## 1           1076             523  119570 53222.37 25.10662</pre>
+
+<p><a href='https://github.com/PLAY-behaviorome/databraryapi' title=''>https://github.com/PLAY-behaviorome/databraryapi</a></p>
+
+</article></slide><slide class=""><hgroup><h2>Databrary 2.0</h2></hgroup><article  id="databrary-2.0">
+
+<ul>
+<li>Updated policy framework</li>
+<li>Rewriting in Node.js, Hasura/GraphQL, Vue.js/Quasar</li>
+</ul>
 
 </article></slide><slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>Discussion</h2></hgroup><article  id="discussion">
 
@@ -330,17 +342,49 @@ slide:not(.current) .plotly.html-widget{
 
 </article></slide><slide class=""><hgroup><h2>What barriers must be overcome to make it commonplace?</h2></hgroup><article  id="what-barriers-must-be-overcome-to-make-it-commonplace">
 
+</article></slide><slide class=""><hgroup><h2>CCan’t sharing data in repositories makes reproducible workflows easier?</h2></hgroup><article  id="ccant-sharing-data-in-repositories-makes-reproducible-workflows-easier">
+
 </article></slide><slide class=""><hgroup><h2>Who owns data? Who should?</h2></hgroup><article  id="who-owns-data-who-should">
 
-</article></slide><slide class=""><hgroup><h2>Does de-identification offer sufficient protection?</h2></hgroup><article  id="does-de-identification-offer-sufficient-protection">
+</article></slide><slide class=""><hgroup><h2>Does de-identification offer sufficient protection to participants?</h2></hgroup><article  id="does-de-identification-offer-sufficient-protection-to-participants">
 
 </article></slide><slide class=""><hgroup><h2>Shouldn’t most (all?) human data be shared via restricted means?</h2></hgroup><article  id="shouldnt-most-all-human-data-be-shared-via-restricted-means">
+
+</article></slide><slide class=""><hgroup><h2></h2></hgroup><article >
+
+<div class="centered">
+
+<video width="800" loop data-autoplay>
+
+<source src="https://github.com/gilmore-lab/DEVSEC-2018/blob/master/mov/databrary-splash.mp4?raw=true" type="video/mp4">
+
+</video>
+
+rog1@psu.edu</br> <a href='https://gilmore-lab.github.io' title=''>https://gilmore-lab.github.io</a></br> <a href='https://github.com/gilmore-lab/2020-04-15-data-studies-group' title=''>https://github.com/gilmore-lab/2020-04-15-data-studies-group</a>
+
+</div>
 
 </article></slide><slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>Resources</h2></hgroup><article  id="resources">
 
 </article></slide><slide class=""><hgroup><h2>Software</h2></hgroup><article  id="software">
 
-<p>This talk was produced on 2020-04-14 in <a href='http://rstudio.com' title=''>RStudio</a> using R Markdown. The code and materials used to generate the slides may be found at <a href='https://github.com/gilmore-lab/2020-04-15-data-studies-group' title=''>https://github.com/gilmore-lab/2020-04-15-data-studies-group</a>. Information about the R Session that produced the code is as follows:</p>
+<!-- Scrolling slides -->
+
+<!-- http://stackoverflow.com/q/38260799 -->
+
+<style>
+slides > slide { overflow: scroll; }
+slides > slide:not(.nobackground):before {
+  background: none;
+  }
+slides > slide:not(.nobackground):after {
+  content: '';
+  background: none;
+  }
+}
+</style>
+
+<p>This talk was produced on 2020-04-15 in <a href='http://rstudio.com' title=''>RStudio</a> using R Markdown. The code and materials used to generate the slides may be found at <a href='https://github.com/gilmore-lab/2020-04-15-data-studies-group' title=''>https://github.com/gilmore-lab/2020-04-15-data-studies-group</a>. Information about the R Session that produced the code is as follows:</p>
 
 <pre >## R version 3.6.2 (2019-12-12)
 ## Platform: x86_64-apple-darwin15.6.0 (64-bit)
@@ -354,27 +398,32 @@ slide:not(.current) .plotly.html-widget{
 ## [1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8
 ## 
 ## attached base packages:
-## [1] stats     graphics  grDevices utils     datasets  methods  
-## [7] base     
-## 
-## other attached packages:
-## [1] qrcode_0.1.1
+## [1] stats     graphics  grDevices utils     datasets 
+## [6] methods   base     
 ## 
 ## loaded via a namespace (and not attached):
-##  [1] Rcpp_1.0.4         digest_0.6.25      R.methodsS3_1.8.0 
-##  [4] R6_2.4.1           jsonlite_1.6.1     magrittr_1.5      
-##  [7] evaluate_0.14      httr_1.4.1         highr_0.8         
-## [10] rlang_0.4.5        stringi_1.4.6      curl_4.3          
-## [13] R.oo_1.23.0        R.utils_2.9.2      databraryapi_0.1.9
-## [16] rmarkdown_2.1      tools_3.6.2        stringr_1.4.0     
-## [19] xfun_0.12          yaml_2.2.1         compiler_3.6.2    
-## [22] htmltools_0.4.0    knitr_1.28</pre>
+##  [1] Rcpp_1.0.4         digest_0.6.25     
+##  [3] R6_2.4.1           jsonlite_1.6.1    
+##  [5] magrittr_1.5       evaluate_0.14     
+##  [7] highr_0.8          httr_1.4.1        
+##  [9] rlang_0.4.5        stringi_1.4.6     
+## [11] curl_4.3           databraryapi_0.1.9
+## [13] rmarkdown_2.1      tools_3.6.2       
+## [15] stringr_1.4.0      xfun_0.12         
+## [17] yaml_2.2.1         compiler_3.6.2    
+## [19] htmltools_0.4.0    knitr_1.28</pre>
 
-</article></slide><slide class=""><hgroup><h2>References</h2></hgroup><article  id="references" class="unnumbered">
+</article></slide><slide class=""><hgroup><h2>References</h2></hgroup><article  class="unnumbered" id="references">
 
-<div id="refs" class="references hanging-indent">
+<div class="references hanging-indent" id="refs">
+<div id="ref-Adolph_KE_Gilmore_RO_Kennedy_JL2017-va">
+<p>Adolph, K.E., Gilmore, R.O., &amp; Kennedy, J.L. (2017). Video as data and documentation will improve psychological science. <a href='https://www.apa.org/science/about/psa/2017/10/video-data' title=''>https://www.apa.org/science/about/psa/2017/10/video-data</a>. Retrieved from <a href='https://www.apa.org/science/about/psa/2017/10/video-data' title=''>https://www.apa.org/science/about/psa/2017/10/video-data</a></p></div>
+
 <div id="ref-Baker2016-rz">
 <p>Baker, M. (2016). 1,500 scientists lift the lid on reproducibility. <em>Nature News</em>, <em>533</em>(7604), 452. <a href='https://doi.org/10.1038/533452a' title=''>https://doi.org/10.1038/533452a</a></p></div>
+
+<div id="ref-Gilmore2017-wd">
+<p>Gilmore, R. O., &amp; Adolph, K. E. (2017). Video can make behavioural science more reproducible. <em>Nature Human Behavior</em>, <em>1</em>. <a href='https://doi.org/10.1038/s41562-017-0128' title=''>https://doi.org/10.1038/s41562-017-0128</a></p></div>
 
 <div id="ref-Srcd2019-hg">
 <p>SRCD. (2019). Policy on scientific integrity, transparency, and openness | society for Research in Child Development SRCD. <a href='https://www.srcd.org/policy-scientific-integrity-transparency-and-openness' title=''>https://www.srcd.org/policy-scientific-integrity-transparency-and-openness</a>. Retrieved from <a href='https://www.srcd.org/policy-scientific-integrity-transparency-and-openness' title=''>https://www.srcd.org/policy-scientific-integrity-transparency-and-openness</a></p></div></div></article></slide>

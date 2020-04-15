@@ -1,6 +1,6 @@
 ---
 title: "The open science revolution"
-subtitle: "Report from the front lines"
+subtitle: "A report from the front lines"
 author: "Rick Gilmore"
 date: "`r Sys.time()`"
 css: css/ioslides-wide.css
@@ -9,8 +9,8 @@ csl: bib/apa.csl
 output: 
   ioslides_presentation:
     self_contained: false
-    lib_dir: libs
     widescreen: true
+    lib_dir: libs
     incremental: false
     transition: default
 ---
@@ -20,18 +20,6 @@ knitr::opts_chunk$set(echo = FALSE)
 ```
 
 # Preliminaries
-
----
-
-<!-- QR code for talk -->
-
-```{r qr-code, echo=FALSE, warning=FALSE, message=FALSE, fig.align='center'}
-library(qrcode)
-talk_url <- 'https://gilmore-lab.github.io/2020-04-15-data-studies-group/'
-qrcode::qrcode_gen(talk_url)
-```
-
-<https://gilmore-lab.github.io/2020-04-15-data-studies-group/>
 
 ---
 
@@ -116,8 +104,6 @@ knitr::include_graphics("http://www.nature.com/polopoly_fs/7.36716.1469695923!/i
 knitr::include_graphics("http://www.nature.com/polopoly_fs/7.36718.1464174471!/image/reproducibility-graphic-online3.jpg_gen/derivatives/landscape_630/reproducibility-graphic-online3.jpg")
 ```
 
-## Does this surprise you? Why or why not?
-
 ---
 
 <div class="centered">
@@ -169,10 +155,21 @@ knitr::include_graphics("http://www.nature.com/polopoly_fs/7.36718.1464174471!/i
 
 ## Video data have unique research potential
 
+as **data**...
+
 - Spatially & temporally dense samples of behavior
 - "Outputs" of biological processes
+
+[[@Adolph_KE_Gilmore_RO_Kennedy_JL2017-va]](https://www.apa.org/science/about/psa/2017/10/video-data)
+
+---
+
+and as **documentation**...
+
 - How procedures are [actually done](https://www.play-project.org/collection.html)
 - Computer-based [task displays](https://nyu.databrary.org/volume/31)
+
+[[@Gilmore2017-wd]](https://doi.org/10.1038/s41562-017-0128)
 
 ## How to protect against risk & realize potential?
 
@@ -201,7 +198,7 @@ db_stats <- databraryapi::get_db_stats()
 
 - Researchers require institutional authorization
 - [Formal access agreement](https://www.databrary.org/resources/agreement.html)
-- Site-wide, not dataset-specific
+- Site-wide access, not dataset-specific
 - Data use and contribution
 
 ## Virtues
@@ -230,6 +227,13 @@ db_stats <- databraryapi::get_db_stats()
 databraryapi::get_db_stats()
 ```
 
+<https://github.com/PLAY-behaviorome/databraryapi>
+
+## Databrary 2.0
+
+- Updated policy framework
+- Rewriting in Node.js, Hasura/GraphQL, Vue.js/Quasar
+
 # Discussion
 
 ## Where do researchers in your field share your data and materials?
@@ -238,15 +242,42 @@ databraryapi::get_db_stats()
 
 ## What barriers must be overcome to make it commonplace?
 
+## CCan't sharing data in repositories makes reproducible workflows easier?
+
 ## Who owns data? Who should?
 
-## Does de-identification offer sufficient protection?
+## Does de-identification offer sufficient protection to participants?
 
 ## Shouldn't most (all?) human data be shared via restricted means?
+
+---
+
+<div class="centered">
+<video width="800" loop data-autoplay>
+  <source src="https://github.com/gilmore-lab/DEVSEC-2018/blob/master/mov/databrary-splash.mp4?raw=true" type="video/mp4">
+  </video>
+rog1\@psu.edu</br>
+<https://gilmore-lab.github.io></br>
+<https://github.com/gilmore-lab/2020-04-15-data-studies-group>
+</div>
 
 # Resources
 
 ## Software
+
+<!-- Scrolling slides -->
+<!-- http://stackoverflow.com/q/38260799 -->
+<style>
+slides > slide { overflow: scroll; }
+slides > slide:not(.nobackground):before {
+  background: none;
+  }
+slides > slide:not(.nobackground):after {
+  content: '';
+  background: none;
+  }
+}
+</style>
 
 This talk was produced on `r Sys.Date()` in [RStudio](http://rstudio.com) using R Markdown.
 The code and materials used to generate the slides may be found at <https://github.com/gilmore-lab/2020-04-15-data-studies-group>.
